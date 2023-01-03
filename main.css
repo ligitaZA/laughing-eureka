@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); 
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 main {
@@ -12,9 +10,12 @@ main {
 header {
   display: flex;
   justify-content: space-between;
-  height: 50px;
-  padding: 10px;
-  margin: 0 25px;
+  height: 60px;
+  padding: 10px 35px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
 }
 
 .kaire {
@@ -71,7 +72,7 @@ form input {
   gap: 5px;
   margin-left: 20px;
   color: rgba(71, 68, 68, 0.74);
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .material-icons:not(.mic) {
@@ -79,12 +80,16 @@ form input {
   padding: 0 7px;
   cursor: pointer;
 }
+.side-bar{
+  position: fixed;
+  width: auto;
+}
 .nav {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 .nav-link {
   display: flex;
@@ -122,15 +127,77 @@ hr {
   gap: 5px;
   align-items: center;
 }
-/* sidebar */
-.side-bar {
+
+.content {
+  background-color: #f9f9f9;
+  width: 100%;
   height: 100%;
-  width: 20%;
-  background-color: white;
-  overflow-y: hidden;
-} 
-@media (max-width: 768px) {
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 50px; padding-left: 250px;
+
+}
+
+.video {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+img {
+  border-radius: 10px;
+}
+.thumbnail {
+  width: 100%;
+  height: 170px;
+}
+
+.thumbnail img {
+  object-fit: cover;
+  height: 94%;
+  width: 100%;
+}
+.author img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.details {
+  display: flex;
+}
+ 
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+ 
+.title h3 {
+  color: rgb(3, 3, 3);
+  line-height: 18px;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+ 
+.title a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 15px;
+}
+/* @media (max-width: 768px) {
   .side-bar {
     display: none;
   }
-}
+} */
