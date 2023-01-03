@@ -1,1 +1,70 @@
-/*sjssj
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+}
+
+.kaire {
+  display: flex;
+  align-items: center;
+  flex: 1;
+ }
+ 
+ .kaire #menu {
+  padding: 0 7px;
+  cursor: pointer;
+ }
+.youtube{
+  height: 20px;
+  width: auto;
+  padding: 0 20px
+}
+ .searching {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex: 2;
+ }
+ 
+ .searching form {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  height: 45px;
+ }
+form input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  height: 100%;
+  border-radius: 30px
+}
+.searching button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  border-radius:  0 30px 30px 0 ;
+}
+.mic {
+  background-color: rgba(226, 223, 223, 0.541);
+  border-radius: 50px;
+  padding: 8px;
+  margin: 10px;
+}
+.right {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  color: rgba(71, 68, 68, 0.74);
+  align-items: flex-end;
+  justify-content: center;
+}
