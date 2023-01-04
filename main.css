@@ -184,6 +184,7 @@ hr {
   width: 300px;
   margin-top: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 img {
   border-radius: 10px;
